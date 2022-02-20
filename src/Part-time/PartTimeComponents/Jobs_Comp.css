@@ -1,0 +1,20 @@
+.jobs{
+    font-weight: bolder;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-gap: 8px;
+    margin-top: 30px;
+}
+
+.jobs-container{
+    width: 100%;
+    height: 80px;
+    background-color: lightblue;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

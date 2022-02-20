@@ -1,0 +1,65 @@
+.card {
+  min-width: 95%;
+  height: auto;
+  background-color: white;
+  border-radius: 6px;
+  padding: 3rem;
+}
+
+.card-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.input-search {
+  display: flex;
+  width: 100%;
+  border: 2px solid grey;
+  padding: 10px;
+  opacity: 0.7;
+  border-radius: 4px;
+}
+
+.input-search > input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  
+}
+
+::-webkit-input-placeholder {
+  font-weight: bold;
+  opacity: 1;
+}
+
+.use-map{
+    background-color: #34255A;
+    color: white;
+    width: 20%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+}
+
+@media screen and (min-width: 425px) {
+  .card{
+    min-width: 40%;
+    width: 450px;
+    max-width: 80%;
+  }
+}
+
+
