@@ -10,19 +10,11 @@ const Card = () => {
 
   const handleChange = (e) => {
     setSearch(e.target.value);
-    let oldData = data.map((d) => {
-      console.log(d.job_name.toLowerCase());
-      return {
-        job_name: d.job_name.toLowerCase(),
-        id: d.id,
-        job_image: d.job_image,
-      };
-    });
 
     if (e.target.value !== "") {
       let newList = [];
-      newList = oldData.filter((p) =>
-        p.job_name.includes(search.toLowerCase())
+      newList = data.filter((p) =>
+        p.job_name.includes(search)
       );
       setData(newList);
     } else {
