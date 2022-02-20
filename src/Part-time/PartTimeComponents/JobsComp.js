@@ -1,6 +1,6 @@
-import "./Jobs_Comp.css";
+import "./JobsComp.css";
 
-const Jobs_Comp = ({data}) => {
+const JobsComp = ({data}) => {
   return (
     <div className="jobs">
       {data.map((job) => {
@@ -15,4 +15,4 @@ const Jobs_Comp = ({data}) => {
   );
 };
 
-export default Jobs_Comp;
+export default JobsComp;

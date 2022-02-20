@@ -1,7 +1,7 @@
 import "./Card.css";
 import { GoSearch } from "react-icons/go";
 import React, { useState } from "react";
-import Jobs_Comp from "./Jobs_Comp";
+import JobsComp from "./JobsComp";
 import { jobs } from "../PartTimeData/data";
 
 const Card = () => {
@@ -47,7 +47,7 @@ const Card = () => {
           <div>Use map</div>
         </div>
       </div>
-      <Jobs_Comp data={data} />
+      <JobsComp data={data} />
     </div>
   );
 };
