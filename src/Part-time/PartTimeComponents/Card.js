@@ -5,22 +5,8 @@ import JobsComp from "./JobsComp";
 import { jobs } from "../PartTimeData/data";
 
 const Card = () => {
-  const [data, setData] = useState(jobs);
+  const [data] = useState(jobs);
   const [search, setSearch] = useState("");
-
-  const handleChange = (e) => {
-    setSearch(e.target.value);
-
-    if (e.target.value !== "") {
-      let newList = [];
-      newList = data.filter((p) =>
-        p.job_name.includes(search)
-      );
-      setData(newList);
-    } else {
-      setData(jobs);
-    }
-  };
 
   return (
     <div className="card">
@@ -30,8 +16,9 @@ const Card = () => {
             <GoSearch />
           </div>
           <input
-            onChange={(e) => handleChange(e)}
+            onChange={(e) => setSearch(e.target.value)}
             type="text"
+            value={search}
             placeholder="Search for a part-time job"
           />
         </div>
@@ -39,7 +26,7 @@ const Card = () => {
           <div>Use map</div>
         </div>
       </div>
-      <JobsComp data={data} />
+      <JobsComp search={search} data={data} />
     </div>
   );
 };

@@ -1,16 +1,18 @@
 import "./JobsComp.css";
 
-const JobsComp = ({data}) => {
+const JobsComp = ({ search, data }) => {
   return (
     <div className="jobs">
-      {data.map((job) => {
-        return (
-          <div key={job.id} className="jobs-container">
-            <div>{job.job_image}</div>
-            <div>{job.job_name}</div>
-          </div>
-        );
-      })}
+      {data
+        .filter((d) => d.job_name.toLowerCase().includes(search.toLowerCase()))
+        .map((job) => {
+          return (
+            <div key={job.id} className="jobs-container">
+              <div>{job.job_image}</div>
+              <div>{job.job_name}</div>
+            </div>
+          );
+        })}
     </div>
   );
 };
