@@ -1,21 +1,42 @@
-.page{
-    height: 100vh;
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.page {
+  height: 100vh;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.gro-card{
-    background-color: white;
-    width: 25%;
-    min-width: 300px;
-    padding: 20px;
-    border-radius: 15px;
+.gro-card {
+  background-color: white;
+  width: 25%;
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 15px;
 }
 
-.gro-heading{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.gro-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gro-items {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.gro-item-btn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-icon {
+  font-size: 1.8rem;
+  opacity: 0.6;
+  padding-top: 5px;
+}
+.item-text {
+  font-size: 1rem;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { BsThreeDots } from "react-icons/bs";
-import GroceriesItems from './GroceriesItems';
-import GroceriesCompleted from './GroceriesCompleted';
+import GroceriesItems from "./GroceriesItems";
+import GroceriesCompleted from "./GroceriesCompleted";
 
 const GroceriesCard = () => {
   return (
@@ -12,7 +12,7 @@ const GroceriesCard = () => {
           <BsThreeDots />
         </div>
       </div>
-      <div>share count</div>
+      <div>share with 1 person</div>
       <GroceriesItems />
       <GroceriesCompleted />
       <div>+</div>
