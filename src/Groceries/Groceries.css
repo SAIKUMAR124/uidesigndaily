@@ -1,0 +1,21 @@
+.page{
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gro-card{
+    background-color: white;
+    width: 25%;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.gro-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
