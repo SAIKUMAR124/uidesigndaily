@@ -4,7 +4,14 @@ export const itemDone = (itemID) => {
   return {
     type: actionTypes.ITEM_DONE,
     payload: {
-        id: itemID
-    }
+      id: itemID,
+    },
+  };
+};
+
+export const addItem = (item) => {
+  return {
+    type: actionTypes.ADD_ITEM,
+    payload: item,
   };
 };

@@ -40,3 +40,17 @@
 .item-text {
   font-size: 1rem;
 }
+
+.plus-sign{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.plus-sign-btn{
+  color: white;
+  background-color: #4E4E80;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+}

@@ -27,6 +27,16 @@ const groceryReducer = (state=INITIAL_STATE, action) => {
                 items: state.items.filter((it)=> it.id !== action.payload.id),
                 itemsCompleted: [...state.itemsCompleted, {...item}]
             }
+        case actionTypes.ADD_ITEM:
+            let addItemData = {
+                id: action.payload.id,
+                name: action.payload.name
+            }
+
+            return {
+                ...state,
+                items: [...state.items, {...addItemData}]
+            }
         default:
             return state;
     }
